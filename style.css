@@ -1,0 +1,30 @@
+
+img.me {
+	position: absolute;
+	max-width: 90%;
+	top: 10%;
+	left: 5%;
+}
+
+img.me:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.me {
+		max-width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img.me {
+		max-height: 90%;
+  }
+}
